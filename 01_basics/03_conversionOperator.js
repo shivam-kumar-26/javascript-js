@@ -84,4 +84,57 @@ let isnotEmpty ="Shivam"
 let valueOfnotEmpty = Boolean(isnotEmpty)
 console.log(valueOfnotEmpty);              // true -< "Shivam"( convert to true
 
+/**************************     OPERATIONS     *************************************** */
+
+let value =3
+let negvalue = -value
+console.log(negvalue); // -3
+
+/*
+console.log(2+2);  4
+console.log(2-2);  0
+console.log(2*2);  4
+console.log(2**3); 8
+console.log(4/2);  2
+console.log(2%2);  0
+
+*/
+
+let str1 ="hello"
+let str2 = " Shivam"
+let str3 = str1+str2
+console.log(str3);  // hello Shivam
+
+//some more deficulty for str and no
+//guide dont use them while coding 
+
+//console.log("1" + 3);   //13
+//console.log(1 + "3");   //13
+//console.log("1" + "3"); //13
+//console.log("1" + 3 +1);  // 131  ***
+//console.log(1 + 3 + "1"); //41
+//console.log( (3+4) * 5 % 5 ); //0
+
+//tricky
+//console.log(+true); //1
+//console.log(true + );  //error
+//console.log(+"");  // 0
+//console.log(+false); //0
+
+let num1 , num2 , num3
+num1 = num2 = num3 = 2+2;  // 4
+
+//prefix
+let gameCounter =100;
+++gameCounter;
+console.log(gameCounter); // 101
+
+//postfix
+let gameNewCounter =100;
+gameNewCounter++;
+console.log(gameNewCounter); // 101
+
+
+
+
 

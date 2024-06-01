@@ -1,0 +1,29 @@
+// types of memory - Stack , Heap
+//Stack - used in  Primitive Type
+/*it is CALL BY VALUE datatypes  means jb v aap inko khi se khi copy krte hain
+for use to inka jo original data h memory ka wo nhi diya jata wo us memoey se copy krke diya jata h ar 
+usme hm jo v changes krte hain wo copy me changes hote hain */
+//Heap - used in Non-Primitive Type
+/*ye sari values wo hain jinka reference memory me allocate kiya jaskta h*/
+
+let myChannel = "Shivam@youtube"
+let anotherName = myChannel
+console.log(myChannel);
+console.log(anotherName)
+anotherName = "ChaiAurCode"
+console.log(anotherName);
+
+let ObjOne = {
+    email:"shivam@google,com",
+    age:22,
+    upi:"shivam@ybl"
+}
+console.log(ObjOne);
+let ObjTwo = ObjOne
+console.log(ObjTwo);
+//access object variableName.__ = change
+ObjTwo.age = 25
+console.log(ObjOne.age);
+console.log(ObjTwo.age);
+
+

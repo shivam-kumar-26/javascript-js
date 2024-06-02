@@ -48,7 +48,7 @@ console.log( url.replace('%20' , '-')) // https://shivam.com/shivam-kumar
 console.log(url.includes("shivam")); // true
 
 //split(sperator '')(limit '') - to covert any string in array
-console.log(gameName.split('-'));
+console.log(url.split('-')); // [ 'https://shivam.com/shivam%20kumar' ]
 
 
 

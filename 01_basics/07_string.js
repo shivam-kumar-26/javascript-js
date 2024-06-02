@@ -50,6 +50,8 @@ console.log(url.includes("shivam")); // true
 //split(sperator '')(limit '') - to covert any string in array
 console.log(url.split('-')); // [ 'https://shivam.com/shivam%20kumar' ]
 
+//explore more string on mdn 
+
 
 
 

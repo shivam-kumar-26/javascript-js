@@ -86,7 +86,13 @@ console.log(Math.random()*10 +1 );  // 0.04 *10 +1=> 0.4 +1 = 1.4
 //enhance readability and avoid BODMAS
 console.log((Math.random()*10 )+1 ); 
 //roundoff -- to avoid decimal
-console.log(Math.floor(Math.random()*10)+1); // we get 1 - 09 // without decimal
+console.log(Math.floor(Math.random()*10)+1); // we get no. betw=> 1 - 09 // without decimal
+// FORMULA
+const min = 10
+const max = 20
+console.log(Math.floor(Math.random() * (max - min + 1))); // 0 -10
+//to avoid 0  and to get minimum no 10
+console.log(Math.floor(Math.random() * (max - min + 1)) + min ); // 10 - 19
 
 
 

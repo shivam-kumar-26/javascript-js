@@ -63,7 +63,7 @@ console.log(Math); // Object [Math] {} ->  Object type
 //explore more of math on console - console.log(Math)
 
 //function
-//.abs(-) - absolute value  -> minus vale -> in posotive
+//.abs(-no.) - absolute value  -> minus vale -> in posotive
 console.log(Math.abs(-555)) // 555
 //.round(4.49) => 4 - round off decimal number
 console.log(Math.round(4.49)); //4
@@ -71,6 +71,27 @@ console.log(Math.round(4.5)); //5
 //ceil -> round of upper no means - 4.2 -> 5 means 4 se thoda v jayda bda no. hua to 5
 console.log(Math.ceil(4.01)); //5
 //floor -> round of floor no. means after decimal no.
+console.log(Math.floor(4.56));//4
+//.max() //.min
+console.log(Math.max(1,8,9,0));//9
+console.log(Math.min(1,8,9,0)); //0
+
+//.random() -> value we get bet 0 - 1 // always we get different no
+console.log(Math.random());
+//.random used for dice game 
+console.log(Math.random()); // manlo -> we get 0.04.... -> range 0 - 1  
+console.log(Math.random()*10 );  // 0.04 *10 => 0.4  
+// to make it atleast 1 -> *************************
+console.log(Math.random()*10 +1 );  // 0.04 *10 +1=> 0.4 +1 = 1.4
+//enhance readability and avoid BODMAS
+console.log((Math.random()*10 )+1 ); 
+//roundoff -- to avoid decimal
+console.log(Math.floor(Math.random()*10)+1); // we get 1 - 09 // without decimal
+
+
+
+
+
 
 
 

@@ -44,7 +44,7 @@ console.log(null <= 0);  //true
  //Strictly Check 
     //-> === ->  it check value as well as data type
 
-/*console.log("2" == 1) // false
+/*console.log("2" == 2) // true
 console.log("2" === 2); // false
 console.log("2" == "2"); //true
 console.log("2" === "2"); //true

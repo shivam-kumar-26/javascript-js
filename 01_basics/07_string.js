@@ -14,7 +14,7 @@ console.log(`Hello my name is ${name.toLowerCase()} and my repoCount is ${repoCo
 //one more way to declare the string
 const gameName = new String("Battle_Ground") // here new (keyword) is used for object in js
 console.log(gameName);// [String: 'Battle_Ground'] //note here ->this [] is not array
-//explore tthe 2nd method of string in console browser fo more
+//explore tthe 3rd method of string in console browser fo more
 //while expolrinf we got index , length of String , ProtoTypes 
 
 //index -> access key like 0 , 1 , 2 , 3 ....

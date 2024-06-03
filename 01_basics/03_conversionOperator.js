@@ -71,6 +71,9 @@ let vlaueOfFollow = Boolean(isFollow)
 console.log(vlaueOfFollow);             // true -< 1 convert to true in boolean
                                         // false -< 0 .....................
 
+let isFollowOne = -85
+let vlaueOfFollowOne= Boolean(isFollowOne) 
+console.log(vlaueOfFollowOne);     // Note - except 0 , for all integer no we get boolean value true                         
 
 let isEmpty =""
 let valueOfEmpty = Boolean(isEmpty)
@@ -133,6 +136,8 @@ console.log(gameCounter); // 101
 let gameNewCounter =100;
 gameNewCounter++;
 console.log(gameNewCounter); // 101
+
+
 
 
 

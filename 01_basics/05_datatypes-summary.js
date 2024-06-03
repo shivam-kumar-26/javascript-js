@@ -70,4 +70,3 @@ console.log(typeof myFunction); // function (also knwn object function  or funct
 
 
 
-

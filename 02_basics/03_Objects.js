@@ -80,6 +80,25 @@ newUser.greeting= function(){
     console.log("Hello User");
 }
 
+//function in object - treated as - koi discrimination nhi hota usko variable ki type trat krskte hain
+//insert function in obj
+JsUser.greeting= function(){  // greeting is prototype in obj
+    console.log("Hello Js User");
+}
+console.log(JsUser.greeting);  // [Function (anonymous)] - function ka reference mila function return nhi hua h
+console.log(JsUser.greeting());  //Hello Js User 
+                                 //undefined
+
+
+                                 
+// we use string interpolation in function also 
+// ${this.age or email or ...} if we want same object ko refrence krna h
+JsUser.greeting1 = function(){
+    console.log(`Hello Js User ${this["Full Name"]} and user LastLogged is ${this.isLastLoggedIn} and age is${this.age} `)
+}                            
+console.log(JsUser.greeting1());//Hello Js User Shivam Kumar and user LastLogged is Monday,Thrusday and age is23 
+
+
 
 
 

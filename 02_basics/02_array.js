@@ -44,6 +44,11 @@ console.log(Array.from("Shivam"));   //[ 'S', 'h', 'i', 'v', 'a', 'm' ]
 console.log(Array.from({name:"Shivam" , age:23 , email:"shivam@gmail.com"}));  //[] - an empty array
 // becz ye confuse hogya ki keys ka array bnau ya value ka array bnau ya dono ka bnau isiliyer empty aaray dediya 
 
+//Array.of -return a new array from set of element
+let score1=200
+let score2 =400
+let score3=800
+console.log(Array.of(score1,score2,score3)); //[ 200, 400, 800 ]
 
 
 

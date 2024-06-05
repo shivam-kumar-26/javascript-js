@@ -181,7 +181,7 @@ navbar(companyName = "Shiv")
     //api is value come from backend and we use that value 
        phle value aati thi .xml structure me 
        ab value aati h json me ya kv kv object array me aati h
-       json -
+       json - json is JavaScript Notataion
         {
 
        } // this is json // yes object is json but note the difference that object ka nam hoyta h json ka name nhi hota 
@@ -210,6 +210,7 @@ navbar(companyName = "Shiv")
        paste the code 
        we get the option - choose format beautify to understand about api
        also we have option code/form/text/view/ tree -use tree and explore 
+*/
 
 
 

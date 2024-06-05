@@ -125,9 +125,91 @@ get __proto__: ƒ __proto__()
 set __proto__: ƒ __proto__()
 */
 
+//Destructuring of object //Destructuring of array v hoti h
+
+//Destructuring of object
+
+const course = {
+    coursename: "js in hindi",
+    price : "999",
+    courseInstructor: "Shivam"
+}
+//asscess 
+console.log( course.courseInstructor) //Shivam
+//for one time print is ok bt if we have to print for many time we use destructing 
+// syn - const {kya value extract krni h} = kha se value extract krni h --- course obj se
+//syntax const { } = varibale name of obj
+const {courseInstructor} = course
+console.log(courseInstructor);     //Shivam
+console.log(courseInstructor);     //Shivam
+console.log(courseInstructor);     //Shivam as many time as we can do
+
+//also jo value extract krni h kafi bdi name h to name ko in
+// destructuring me change krskte hain
+
+//DESTRUCTURING
+const {courseInstructor:Instructor} = course
+console.log(Instructor);    //shivam
+const {coursename:name} = course
+console.log(name);    //js in hindi
+
+/*
+//React ke fundamental
+//in recat - method hota h - we use destructuring 
+
+//inside (by default props hota h ) - props.company , pprops.companyHike etc - bt er dont use like that 
+//we use destructuring - object {} - inside ({}) - and put info - ({company})
+
+const navbar = ({}) => {
+
+}
+
+// navbar ko cll krenge to kuch value denge  that logo ye hoga home me ye likhna h - navbar me changement keliye 
+//call navbar
+
+navbar(companyName = "Shiv")
+*/
 
 
+/*
+//API - Application programming interface
+- apna kam kisi ar ke sir pe dalna called api
+//ex restaurant me menu card is api documentation 
+    let we decided to eat dosa - we order it - and rest work till procees to eat done by restaurant that called api
+    at google logged in - its google work to verify the user and get looged in
 
+    //api is value come from backend and we use that value 
+       phle value aati thi .xml structure me 
+       ab value aati h json me ya kv kv object array me aati h
+       json -
+        {
+
+       } // this is json // yes object is json but note the difference that object ka nam hoyta h json ka name nhi hota 
+          baki all things of object same treated as json like - key  and key treated as string, value etc
+      example
+        {
+            "name":"Shivam",
+            "age":0,
+            "email" :"abc@gmail.com"
+        }
+// now let see json se api call hoti h to hota kya h milta kya h 
+// explore on google - search api.github
+//object array me aati h
+[
+    {},
+    {},
+    {}
+]
+
+//explore more API
+//api - randomuserme api
+        copy  url inside randomuserme api - https://randomuser.me/api/
+        google it
+        copy the code/strurcture we get
+       google-  open jsonformatter
+       paste the code 
+       we get the option - choose format beautify to understand about api
+       also we have option code/form/text/view/ tree -use tree and explore 
 
 
 

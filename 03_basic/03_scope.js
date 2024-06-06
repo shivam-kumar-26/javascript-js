@@ -95,3 +95,65 @@ one()
 // Nested function - me child function jo hsin wo parent function ke variable ko access kr pate    
 
 
+// some more about scope
+
+if(true){
+    const userName="Shivam"
+    if(userName==="Shivam"){
+        const website = "youtube"
+        console.log(userName); // Shivam  /work -inside scope
+        console.log(website); // Youtube / work - inside scope
+    }
+    // console.log(website); // not work / becz out of scope 
+    console.log(userName); //shivam - work /becz inside scope
+}
+// console.log(userName); // not work / outside the scope 
+
+
+
+/******************** intresting ************************/
+
+//basic function
+function addone(num) {
+    return num + 1
+}
+//call function( and print)
+console.log(addone(5));  // 6
+
+// another basic function / or called/ expression
+const addTwo = function(num){
+    return num +2
+} 
+//call and print function()
+console.log(addTwo(5));  // 7
+
+/*****now upper ke same function ko print ya call function ko
+ *  function define se phle krenge call krenge ya print krenge   let see*/
+
+///intresting ////
+
+//basic function  - yha function ko declare sirf kiya h
+//call function
+console.log(addthree(5))  // 8 / it work that if function define alredy we can call when or whenever we need 
+
+function addthree(num) {
+    return num +3
+}
+
+//expression function - yja function ko declare krke ek variable me hold v kiya h -  // notealso variable can hold many thhings like json value,function etc 
+
+//call function before defing the function
+// console.log(addFour(5))  //Cannot access 'addFour' before initialization
+
+const addFour = function (num) {
+    return num +4
+}
+console.log(addFour(5)); //9
+
+//hoisting in javascript - upper wale ko use krenge is topic me 
+
+
+
+
+
+

@@ -56,14 +56,42 @@ if(true){
     let G = 30
     console.log("Inner_Scope" , G);   // Inner_Scope 30
 }
-console.log("Global-Scope", G); //Global-Scope 300
+console.log("Global", G); //Global 300
 
 //Interview- in window- inspect - console - me jo GLOBAL scope check krenge/ core scope dekhenge - wo alg h
 // ar code environment(vs code me) - node ke through example ko run krte hain to GLOBAL SCOPE alg hota h 
-//Global scope ke value ko - Inner scope me use krskte hain bt inner scope ka value bahr nhi jana chahiye
+//Global ke value ko - Inner scope me use krskte hain bt inner scope ka value bahr nhi jana chahiye
 /*
+
+//extra topic
 //Nested scope- Scope ke andr scope or function ke andr ek function -> to yha scope kis trh kam krte hain
 //clousers kya hote hain - clouser ek bahot acchi techniqye h in js ar iske liye DOM aana jarurui h 
 // DOM (DOCUMENT OBJECT MODEL) yani kaise HTML ke webpage ko Manipulate kiya jata h js ke through
-
 */
+
+
+//scope me scope
+function one(){
+    const userName = "Shivam"
+    // console.log(userName); agr username jo call function two me dale hain jb hm calll function two me username nhi print krwate ar call function two nhi krte to ye statement execute krwa kr dirct call two krke username print krwa skte the 
+
+    function two() {
+        const website = "youtube"
+        console.log(userName);  // Shivam  //Global Scope in Inner Scope
+    }
+    // console.log(website);  //error ReferenceError: website is not defined // website ka scope inside hi khtm hogya bahr access kroge to problm aaegi h //Inner Scope usinjg in Global Scope
+    //call function
+    two() // or two(one) both  can be written  // ye previous website ke error ke karn extecute nhi horha tha /jo ab comment out h console     
+}
+//call function
+one()
+//note global scope can be use in inner scope but inner scope cant be use in global scope
+//yja output Shivam aaya - kynki caal function two jb hua to us function - two me print krana tha username ko to username print hogya Shivam
+//note agr call function jo - two h usko cll nhi krenge -two() nhi krenge to function two me jo print krana h wo kam nhi krega jo tha usrname ko print krwana
+// menas clla function - two() - nhi call hota to username print nhi hota-kynki username call function two me h 
+
+//note jitni baar function (declare) krte ya bnate hain ar jitni baar call krte hain to unke liye alg ek call stack bnta h yani alg ek scope bnta h ar us scope ko stack me rkha jata h
+//clouser - aapka andr ka function jo bahr ke varible ko access krpata h 
+// Nested function - me child function jo hsin wo parent function ke variable ko access kr pate    
+
+

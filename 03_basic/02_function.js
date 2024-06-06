@@ -175,6 +175,36 @@ function handleObject1(anyObject){
 //call function() - pass args and print
 handleObject(user1) // args me obj name ko dal diya 
 //output - Username is Shivam and price is undefined 
+
 //note - type safety check krni pdti h - 
 //jo price mai extract kr rha hun wo available h ya nhi object me
 //ar jo value - parameter pass kr rhe ho wo object h ya nhi h 
+
+//we can also pass object dirct without creating object name
+//declare function with parameter- using interpolation - inject parameter.object inside call function - call function() and inside extraction define object what u want  
+function handleObject2(anyobject) {
+    console.log(`hy my name is ${anyobject.name} and my prices is ${anyobject.prices}`);
+}
+//call function()
+handleObject2({
+    name: "samarth",
+    prices:399
+})                      //output - hy my name is samarth and my prices is 399
+
+//we can also pass array-datatype- inside the function same as object
+const myNewArray = ["Shivam",2000000,"shivam@gmail.com"]
+function handleArray(anyArray){
+    // return anyArray[2] or 
+    return anyArray
+
+
+}
+//call function()
+// console.log(handleArray(myNewArray)); or - this is for - // return anyArray[2] or 
+console.log(handleArray(myNewArray)); //[ 'Shivam', 2000000, 'shivam@gmail.com' ]
+console.log(handleArray(myNewArray[2])); //'shivam@gmail.com' 
+//or
+console.log(handleArray([200,400,500,600])); //[ 200, 400, 500, 600 ]
+
+
+

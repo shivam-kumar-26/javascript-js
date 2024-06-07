@@ -89,12 +89,14 @@ function chai_Pani() {
 chai_Pani()
 //simply this is only used in object not in function
 
+
 //CONFUSION - this ko lekr
 function Pizza_Code() {
     username = "Shivam"
     console.log(this.username); // Shivam - here we geeting the value 
 }
 Pizza_Code()
+
 
 // we find that console(this) - in object - {} - give empty object
 // we find that cosole (this) - in function - in function it is giving Object[global] , clearImmediate ,  setImmediate,  clearInterval, clearTimeout, setTimeout,navigator,performance, crypto etc
@@ -103,3 +105,4 @@ function chai() {
 }
 //call function
 chai()
+

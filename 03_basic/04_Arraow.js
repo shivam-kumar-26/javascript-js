@@ -80,20 +80,21 @@ console.log(this);  /* {}  - - empty object we get - becz hm - nord environment 
                         so browser me jb v run krta h b(this) - to global ke andr jo object h - windows object
   INTERVIEW QUE   ----   so in inspect - console this - global obj - we get windows*/
 
-  //Arrow function
-// note-- Arraow function ke andr this nhi hota h how let see
+  //discuss about this
+// note-- Arraow function ke andr this nhi hota h how let see  but function me this use hota h  - line 87 and 97
 function chai_Pani() {
     let username = "Shivam"
-    console.log(this.username); //undefined- so we can say- Arraow function ke andr this use  nhi hota h
+    console.log(this.username); //undefined- so we can say- Arraow function ke andr this use  nhi hota h // or this as a function kam nhi krta h bt as a object kam krta h 
 }
 chai_Pani()
 //simply this is only used in object not in function
 
 
-//CONFUSION - this ko lekr
+
+//this keyword in function 
 function Pizza_Code() {
     username = "Shivam"
-    console.log(this.username); // Shivam - here we geeting the value 
+    console.log(this.username); // Shivam - here we geeting the value  using this keyword
 }
 Pizza_Code()
 
@@ -101,8 +102,89 @@ Pizza_Code()
 // we find that console(this) - in object - {} - give empty object
 // we find that cosole (this) - in function - in function it is giving Object[global] , clearImmediate ,  setImmediate,  clearInterval, clearTimeout, setTimeout,navigator,performance, crypto etc
 function chai() {
-    console.log(this); // we find here that - in function it is giving Object[global] , clearImmediate ,  setImmediate,  clearInterval, clearTimeout, setTimeout,navigator,performance, crypto etc
+     console.log(this); // we find here that - in function it is giving - Object[global] , clearImmediate ,  setImmediate,  clearInterval, clearTimeout, setTimeout,navigator,performance, crypto etc
 }
 //call function
+// chai(this) // note inside call function - argument pas hota h ar argument function ke a/c hota h / and (this) is not argument 
 chai()
+
+
+// if we console(this) outside the function then
+function proof() {
+}
+console.log(this)  // {} - empty obj - becz gobal me koi contest hi nhi h 
+//call function
+proof()
+// and we we console(this) - inspect- their we get - window as global - so browser me sbse jayda jo global object h wo window object h
+
+// console (this) in  function - get output - 
+const cheeze = function(){
+    let usergame = "Battle"
+    console.log(this);   //in function it is giving - Object[global] , clearImmediate ,  setImmediate,  clearInterval, clearTimeout, setTimeout,navigator,performance, crypto etc
+     // mtlb this ke pas kuch to h jisko use kiya ja skta h 
+}
+//call function
+cheeze()
+
+
+//// **************Arrow Function *******************
+const Mushroom = () => {     // function keyword ht jaega (parameter) ke bad => lg jaega baki sb as it is
+    let userName = "Shiva",
+    useGame = "IGI"
+    console.log(this);  // {} - 1st print-empty obj - chahe keyword me let use kro na kro arrow function me this - {} - empyt obj hi dega
+    console.log(this.useGame); // undefined  /3rd print- means arrow function me - this keyword use nhi hota
+    console.log(this.userName); // undefined  --/4th print- means arrow function me - this keyword use nhi hota
+}
+//call function
+console.log(this);  //{} / 2nd print -empty obj - kynki global contest me kuch nhi h 
+Mushroom()
+
+/*Arrow function
+syntax- () => {} - call function 
+// explicit return - jb {} and return lgana pd rha h */
+const subTwoNo = (num1,num2)=> {
+    return num1-num2
+}
+console.log(subTwoNo(5,3))  //2
+
+//arrow function - use in 2nd method - called implicit return
+//implicit return - don't use curly braces and return keyword 
+// agr curly bracess me wrap kiya means { num1 + ,-,* etc  num2} to return keyword v use krna pdega
+
+const badapow = (num3,num4)=> num3**num4
+console.log(badapow(5,2))  //25
+
+//or - this is mainly use in react js
+const microsoft = (num1,num2)=> (num1 * num2) // we can wrap in () - parenthesis
+console.log(microsoft(5,2));   //10
+
+//implicit return -me - jb hm object return krana chahte hain 
+const object1 = (str1) => {
+    usernam: "shivam"
+}
+console.log(object1()); // undefined - becz  in arrow function -we need to wrap object in()
+ 
+const object2 = (str2) => ({usernam: "shivam"})  // obj wrap in ()
+console.log(object2()); //  { usernam: 'shivam' }
+
+
+//function bahot sara loop me kam aata h / a/c to method 
+// forEach - A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
+ 
+const newArray=[2 ,2,5,7,9,3]
+//correct syntax for function
+newArray.forEach(function(){}) // inside() we use arrow/classic etc function //correct syntax
+//correct syntax - for arrow function
+newArray.forEach(()=>{}) // explicit return - use {} and return
+//or
+newArray.forEach(()=>({})) // implicit return - not uese return and {} or - use ({}) braces inside parenthesis
+
+    
+
+
+
+
+
+
+
 

@@ -21,7 +21,7 @@ Pizza();
 
 
  
-//use iifi - global scope ke pollution se prblm hoti h kayi bar to us global scope ke jo variable hai jo v declarae h variable - to us pollution ko htane kelie hm iifi ka use krte hain
+//use iife - global scope ke pollution se prblm hoti h kayi bar to us global scope ke jo variable hai jo v declarae h variable - to us pollution ko htane kelie hm iifi ka use krte hain
 //(function ki defination likhenge) (jha function ka execution) // parethesis lgane se ek block bn jata h uske andr v kam kiya ja skta h inm function
 //note this is named iifi - means iifi ka name h - Pizz1
 (function Pizz1(){
@@ -40,11 +40,11 @@ Pizza();
  - 2nd give variable name - in parameter-(varname)
  - 3rd give expected value- in argument- jo ki call function execution me hota h - (write ur expected value which u want inside the var name) let see*/
 
- // this is simple iifi /unnamed iifi - becz name nhi h 
+ // this is simple iifi /unnamed iife - becz name nhi h 
 ((name)=>{
     console.log(`DB Connect ${name}`);
  })("Shiv");  // DB Connect Shiv
 
- // two ar more iifi likhna h jaise upper 3 iifi likhe hain waise hi likhna hota h bs ; semicolon ka dhyan rkhna hota h 
+ // two ar more iife likhna h jaise upper 3 iifi likhe hain waise hi likhna hota h bs ; semicolon ka dhyan rkhna hota h 
 
 

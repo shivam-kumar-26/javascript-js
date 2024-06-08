@@ -21,7 +21,7 @@ console.log(val2); //10
 // becz null and undefined value can hamper our value, condition even our code
 
 val3 = undefined ?? 108 ?? 50
-console.log(val3);  // 108 -  not ignoring null and undefined - nullish coalsing - gives us 1st real value 
+console.log(val3);  // 108 -  ignoring null and undefined - nullish coalsing - gives us 1st real value 
 
 
 
